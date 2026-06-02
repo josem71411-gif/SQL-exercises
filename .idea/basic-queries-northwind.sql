@@ -5,11 +5,6 @@ SELECT ProductID, ProductName, UnitPrice FROM Products ORDER BY UnitPrice ASC;
 
 SELECT ProductID, ProductName, UnitPrice
 FROM Products
-ORDER BY UnitPrice ASC;
-
-
-SELECT ProductID, ProductName, UnitPrice
-FROM Products
 WHERE UnitPrice <= 7.50;
 
 
@@ -37,3 +32,17 @@ FROM Categories;
 SELECT ProductID, ProductName, UnitPrice
 FROM Products
 WHERE CategoryID = 8;
+
+select FirstName, LastName from employees;
+
+select firstname, lastname, title from employees where title like '%manager%'
+
+select distinct title from employees;
+
+SELECT FirstName, LastName, Salary
+FROM Employees
+WHERE Salary BETWEEN 2000 AND 2500;
+
+select * From suppliers;
+
+SELECT p.ProductID, p.ProductName, p.UnitPrice FROM Products p JOIN Suppliers s ON p.SupplierID = s.SupplierID WHERE s.CompanyName = 'Tokyo Traders';
