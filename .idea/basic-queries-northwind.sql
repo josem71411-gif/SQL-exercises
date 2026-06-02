@@ -30,3 +30,10 @@ FROM Products
 WHERE UnitsInStock = 0
   AND UnitsOnOrder >= 1
 ORDER BY ProductName;
+
+SELECT *
+FROM Categories;
+
+SELECT ProductID, ProductName, UnitPrice
+FROM Products
+WHERE CategoryID = 8;
