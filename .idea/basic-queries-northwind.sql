@@ -1,0 +1,1 @@
+select productid, productname, unitprice from products;
